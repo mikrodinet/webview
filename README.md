@@ -10,11 +10,11 @@ A Simple To Use App That Shows Web Pages Within The App And Download Content Usi
 
 ### Demo
 
-Download here : [Demo Apk]( )
+Download here : [Demo Apk](https://github.com/mikrodinet/webview/raw/master/app/download/app-release.apk)
 
 # Getting Started
 
-[Download](app/download/mikrodinet.apk) or clone this repository and import it into Android Studio.
+[Download](https://github.com/mikrodinet/webview/raw/master/app/download/app-release.apk) or clone this repository and import it into Android Studio.
 
 ## Change Website URL 
 Open the ```app/src/main/java/com/webview/app/MainActivity.java``` file and replace `https://github.com/mikrodinet` on line **68** with your website
