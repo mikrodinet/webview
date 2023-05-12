@@ -8,5 +8,13 @@
         android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+    
+    <com.google.android.gms.ads.admanager.AdManagerAdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id" />
 </RelativeLayout>
