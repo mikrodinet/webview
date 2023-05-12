@@ -1,4 +1,9 @@
 # MIKRODINET
+
+[MIKRODINET](https://www.mikrodinet.eu.org) adalah sebuah blog personal yang membahas tentang pembelajaran mengenai ilmu pengetahuan yang berkaitan dengan ilmu komputer terlebih khusus tutorial dan cara menjalankan software komputer yang mudah dipelajari oleh pemula.
+
+Original site : www.mikrodinet.eu.org
+
 # Android-Webview-App
 A Simple To Use App That Shows Web Pages Within The App And Download Content Using Phone's Internal Downloader
 
