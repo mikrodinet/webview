@@ -18,6 +18,9 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
+import android.support.v7.app.ActionBarActivity;
+import com.google.android.gms.ads.AdRequest; //Import class AdRequest
+import com.google.android.gms.ads.AdView;    //import class Adview
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -97,7 +100,16 @@ public class MainActivity extends Activity {
             return true;
         }
     }
+  
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+    }
     @Override
     public void onBackPressed() {
         if (mWebView.canGoBack()) {
