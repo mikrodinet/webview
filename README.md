@@ -143,7 +143,7 @@ function registerAdEvents() {
 ## plugin cordova
 
 ```
-<script src="https://raw.githubusercontent.com/sunnycupertino/cordova-plugin-admob-simple/master/www/AdMob.js"></script>
+<script src="[https://raw.githubusercontent.com/sunnycupertino/cordova-plugin-admob-simple/master/www/AdMob.js](https://raw.githubusercontent.com/mikrodinet/webview/master/admob/plugin/js/index.js)"></script>
 <script type="text/javascript">
 //initialize the goodies
 function initAd(){
