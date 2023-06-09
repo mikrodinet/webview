@@ -21,6 +21,23 @@ Download here : [Demo Apk](https://github.com/mikrodinet/webview/raw/master/app/
 
 [Download](https://github.com/mikrodinet/webview/raw/master/app/download/app-release.apk) or clone this repository and import it into Android Studio.
 
+## Windows
+
+```
+# Create a folder under the drive root
+$ mkdir actions-runner; cd actions-runner# Download the latest runner package
+$ Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.304.0/actions-runner-win-x64-2.304.0.zip -OutFile actions-runner-win-x64-2.304.0.zip# Optional: Validate the hash
+$ if((Get-FileHash -Path actions-runner-win-x64-2.304.0.zip -Algorithm SHA256).Hash.ToUpper() -ne 'fbbddd2f94b195dde46aa6028acfe873351964c502aa9f29bb64e529b789500b'.ToUpper()){ throw 'Computed checksum did not match' }# Extract the installer
+$ Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.304.0.zip", "$PWD")
+```
+### Config
+```
+# Create the runner and start the configuration experience
+$ ./config.cmd --url https://github.com/mikrodinet/webview --token A3WZ3XRGVE4PZIRRZMVPMIDEQNE62# Run it!
+$ ./run.cmd
+```
+
+
 ## Change Website URL 
 Open the ```app/src/main/java/com/webview/app/MainActivity.java``` file and replace `https://github.com/mikrodinet` on line **68** with your website
 ```json
@@ -436,3 +453,13 @@ public class MainActivity extends Activity {
 
 }
 ```
+
+
+### LICENSE
+
+Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+                        Website : https://www.mikrodinet.eu.org
+                        gh-pages : https://mikrodinet.github.io
+                        github : https://github.com/mikrodinet/webview
