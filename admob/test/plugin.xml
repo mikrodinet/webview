@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="webview-admob-test"
+    version="1.0.0-dev">
+    <name>Mikrodinet Cordova AdMob Test</name>
+    <license>MIT</license>
+
+    <platform name="android">
+        <source-file src="android/AdMobConfigTest.java" target-dir="test/java/eu/org/mikrodinet/app/cordova/admob" />
+        <source-file src="android/CordovaEventBuilderTest.java" target-dir="test/java/eu/org/mikrodinet/app/cordova/admob" />
+    </platform>
+</plugin>
