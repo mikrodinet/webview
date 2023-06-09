@@ -26,7 +26,7 @@ public class AdMobConfigTest {
     @Test
     public void canSetBannerUnitId() throws JSONException {
         AdMobConfig config = new AdMobConfig();
-        assertEquals("ca-app-pub-3940256099942544/6300978111", config.getBannerAdUnitId());
+        assertEquals("ca-app-pub-6827901881006590/7447792677", config.getBannerAdUnitId());
 
         config.setOptions(new JSONObject("{\"publisherId\": \"banner-id\"}"));
         assertEquals("banner-id", config.getBannerAdUnitId());
@@ -35,7 +35,7 @@ public class AdMobConfigTest {
     @Test
     public void canSetInterstitialAdUnitId() throws JSONException {
         AdMobConfig config = new AdMobConfig();
-        assertEquals("ca-app-pub-3940256099942544/1033173712", config.getInterstitialAdUnitId());
+        assertEquals("ca-app-pub-6827901881006590/6330618713", config.getInterstitialAdUnitId());
 
         config.setOptions(new JSONObject("{\"interstitialAdId\": \"interstitial-id\"}"));
         assertEquals("interstitial-id", config.getInterstitialAdUnitId());
