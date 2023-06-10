@@ -18,6 +18,12 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -110,3 +116,19 @@ public class MainActivity extends Activity {
     }
 
 }
+public class MainActivity extends Activity {
+        TappxBanner banner;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            banner = (TappxBanner) findViewById(R.id.tappx_banner);
+        }
+
+        @Override
+        protected void onDestroy() {
+            super.onDestroy();
+            banner.destroy();
+        }
+    }
