@@ -62,3 +62,10 @@ dependencies {
 }
 compile 'com.google.android.gms:play-services-ads:7.5.0'
 }
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.tappx.sdk.android:tappx-sdk:4.+'
+}
