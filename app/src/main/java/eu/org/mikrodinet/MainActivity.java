@@ -182,3 +182,12 @@ function registerAdEvents() {
     }
 
 }
+Tappx.setCollectLocationEnabled(context,true);
+-keepattributes *Annotation*
+-keepclassmembers class com.google.**.R$* {
+    public static ;
+}
+-keep public class com.google.ads.** {*;}
+-keep public class com.google.android.gms.** {*;}
+-keep public class com.tappx.** { *; }
+Tappx.setCoppaCompliance(context, true);
