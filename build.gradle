@@ -49,3 +49,10 @@ allprojects {
 
   }
 }
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.tappx.sdk.android:tappx-sdk:4.+'
+}
